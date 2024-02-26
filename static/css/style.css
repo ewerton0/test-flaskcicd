@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#upload-container {
+    margin-bottom: 20px;
+}
+
+#result-container {
+    margin-top: 20px;
+}
+
+#upload-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.custom-file-upload:hover {
+    background-color: #e0e0e0;
+}
+
+#file-upload {
+    display: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Font Awesome icons */
+.fa-cloud-upload-alt {
+    margin-right: 5px;
+}

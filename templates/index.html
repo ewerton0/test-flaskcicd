@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>OCR</h1>
+
+        <div id="upload-container">
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="file-upload" class="custom-file-upload">
+                    <i class="fas fa-cloud-upload-alt"></i> Escolha os arquivos
+                </label>
+                <input id="file-upload" type="file" name="files[]" multiple accept=".pdf" onchange="displayFileName()">
+                <button type="button" onclick="uploadFiles()">Upload</button>
+            </form>
+            <p id="selected-file-name">Nemhum arquivo selecionado</p>
+        </div>
+
+        <div id="result-container">
+            <h2>Resultado</h2>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
