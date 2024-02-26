@@ -5,5 +5,5 @@ docker login --username AWS --password $(aws ecr get-login-password --region us-
 echo "Logged in to Amazon ECR successfully."
 
 echo "Pulling image from Amazon ECR"
-docker pull 156769710368.dkr.ecr.us-east-1.amazonaws.com/flask_image:latest
+docker pull 156769710368.dkr.ecr.us-east-1.amazonaws.com/flask-test:latest
 echo "Pulled image from Amazon ECR successfully."
