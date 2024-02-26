@@ -9,7 +9,8 @@ RUN apt-get update \
   && apt-get -y install tesseract-ocr \
   && apt-get install tesseract-ocr-por \
   && python -m pip install -r requirements.txt \
-  && apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+  && apt-get update && apt-get install ffmpeg libsm6 libxext6  -y \
+  && apt-get install poppler-utils
 
 EXPOSE 5000
 
